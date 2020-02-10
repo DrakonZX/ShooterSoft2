@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Hind Guntur', sans-serif;
+}
+html{
+  width: 100%;
+  height: 100%;
+}
+header{
+  background-image: url(../img/498829.jpg);
+  height: 300px;
+  text-align: center;
+}
+header img{
+  width: 150px;
+  height: 150px;
+  margin-top: 80px;
+}
+.menu{
+  text-align: center;
+  background-color: #161C08;
+}
+.menu a{
+  padding: 10px 40px 10px 40px;
+  color: #89BF00;
+  border-bottom: 3px solid #89BF00;
+}
+.menu a:hover{
+  border-color: #E8FFC6;
+  transition-duration: 0.5s;
+}
+.dropbtn {
+  background-color: #89BF00;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+}
+.dropdown a{
+  border: none;
+  padding: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 16px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {
+  background-color: #E8FFC6;
+  color: #161C08;
+  transition-duration: 0.5s;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 70%;
+  margin: auto;
+}
+.item2 img {
+  width: 400px;
+  height: 100px;
+}
+.itens{
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+.item2{
+  border: 2px solid #131600;
+  margin-left:120px;
+  text-align: center;
+  width: 250px;
+}
+.item2 img{
+  width: 150px;
+  height: 150px;
+}
+.item2 h3{
+  font-size: 14px;
+  height: 60px;
+  text-align: justify;
+  border-bottom: 1px solid #E8FFC6;
+  font-weight: bold;
+  color: #131600;
+  padding-left: 10px;
+}
+.item2 p{
+  margin: auto;
+  float: left;
+  margin-left: 10px;
+  font-weight: bold;
+}
+.card:hover{
+  transition-duration: 0.5s;
+  border-color: green;
+}
+.item_links{
+  display:inline-block;
+  margin-top: 20px;
+}
+.item_links .fav{
+  background-color: #F96F2A;
+  padding: 10px 20px 10px 20px;
+  margin-left: -5px;
+  border: 5px solid #131600;
+  color: #131600;
+  font-size: 18px;
+  text-decoration: none;
+}
+.item_links .comp{
+  background-color: #131600;
+  padding: 12px 50px 12px 50px;
+  border: 5px solid #131600;
+  color: #E8FFC6;
+  text-decoration: none;
+}
+
+
+/*Cadastro e Login */
+.login-container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.login-logo{
+    position: relative;
+    margin-left: -41.5%;
+}
+.login-logo img{
+    position: absolute;
+    width: 20%;
+    margin-top: 19%;
+    background: #282726;
+    border-radius: 4.5rem;
+    padding: 5%;
+}
+.login-form-1{
+    padding: 9%;
+    background:#282726;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-1 h3{
+    text-align: center;
+    margin-bottom:12%;
+    color:#fff;
+}
+.login-form-2{
+    padding: 9%;
+    background: #f05837;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-2 h3{
+    text-align: center;
+    margin-bottom:12%;
+    color: #fff;
+}
+.btnSubmit{
+    font-weight: 600;
+    width: 50%;
+    color: #282726;
+    background-color: #fff;
+    border: none;
+    border-radius: 1.5rem;
+    padding:2%;
+}
+.btnForgetPwd{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.btnForgetPwd:hover{
+    text-decoration:none;
+    color:#fff;
+}
