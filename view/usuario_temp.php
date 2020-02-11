@@ -1,28 +1,3 @@
-<?php
-  if (isset($_POST['cadas_email']) && isset($_POST['cadas_senha'])) {
-    $sql = "select * from usuario where email='$_POST[cadas_email]'";
-    $sql = $pdo->query($sql);
-    if ($sql->rowCount()==0) {
-      $sql = "insert into usuario set email='$_POST[cadas_email]',senha='$_POST[cadas_senha]'";
-      $sql = $pdo->query($sql);
-    }
-  }
-  else {
-    if (isset($_POST['login_email']) && isset($_POST['login_senha'])) {
-      $sql = "select * from usuario where email='$_POST[login_email]'";
-      $sql = $pdo->query($sql);
-      if ($sql->rowCount()>0) {
-        foreach ($sql->fetchAll() as $usuario) {
-          if ($_POST['login_email'] == $usuario['email'] && $_POST['login_senha'] == $usuario['senha']) {
-            session_start();
-            $_SESSION['usuario'] = $_POST['login_email'];
-            header("location:http://localhost/shooter_mvc/");
-          }
-        }
-      }
-    }
-  }
- ?>
 <!DOCTYPE html>
 <html lang="pt" dir="ltr">
   <head>
@@ -43,7 +18,7 @@
             <div class="row">
                 <div class="col-md-6 login-form-1">
                     <h3>Login</h3>
-                      <form method="post">
+                      <form method="post" action="http://localhost/shooter_mvc/usuario/suaconta/valida">
                         <div class="form-group">
                             <input type="email" class="form-control" placeholder="Your Email *"  name="login_email" />
                         </div>
@@ -63,7 +38,7 @@
                         <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
                     </div>
                     <h3>Cadastro</h3>
-                      <form method="post">
+                      <form method="post" action="http://localhost/shooter_mvc/usuario/suaconta/valida">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Your Email *" value="" name="cadas_email" />
                         </div>

@@ -13,7 +13,19 @@
   <body>
       <header>
         <img src="http://localhost/shooter_mvc/assets/img/logo_veridico.png" alt="">
-        <a href="http://localhost/shooter_mvc/usuario/suaconta">Login</a>
+        <?php
+        echo $_SESSION['usuario'];
+        if (isset($_SESSION['usuario'])) {
+          ?>
+          <a href="http://localhost/shooter_mvc/usuario/suaconta/logout">Logout</a>
+          <?php
+        }
+        else {
+          ?>
+          <a href="http://localhost/shooter_mvc/usuario/suaconta">Login</a>
+          <?php
+        }
+         ?>
       </header>
       <div class="menu">
         <a href="http://localhost/shooter_mvc/home">Home</a>
